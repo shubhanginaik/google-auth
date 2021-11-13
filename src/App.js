@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-import Login from './components/Login';
+import GoogleLogin from './components/GoogleLogin';
 import Home from './components/Home';
 import firebase from './service/firebase';
 
@@ -18,7 +18,7 @@ function App() {
   console.log(user);
   return (
     <div className="App">
-      {user ? <Home user={user}/> : <Login />}
+      {user ? <Home user={user}/> : <GoogleLogin />}
     </div>
   );
 }
